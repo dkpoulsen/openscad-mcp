@@ -16,20 +16,48 @@ A Model Context Protocol (MCP) server for OpenSCAD - enables AI assistants to cr
 
 ## Installation
 
+### Via npm (Recommended)
+
 ```bash
-# Clone or download this repository
+npm install -g openscad-mcp
+```
+
+### From Source
+
+```bash
+# Clone the repository
+git clone https://github.com/dkpoulsen/openscad-mcp.git
 cd openscad-mcp
 
-# Install dependencies
+# Install dependencies and build
 npm install
-
-# Build the project
 npm run build
 ```
 
 ## Usage with Claude Desktop
 
-Add to your Claude Desktop configuration (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
+Add to your Claude Desktop configuration:
+
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
+**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+**Linux**: `~/.config/Claude/claude_desktop_config.json`
+
+### Using npx (after npm install)
+
+```json
+{
+  "mcpServers": {
+    "openscad": {
+      "command": "npx",
+      "args": ["-y", "openscad-mcp"]
+    }
+  }
+}
+```
+
+### Using local build
 
 ```json
 {
