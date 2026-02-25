@@ -13,9 +13,21 @@
     "watch": "tsc --watch"
   },
   "keywords": ["mcp", "openscad", "cad", "3d-printing", "model-context-protocol"],
-  "author": "",
+  "author": "dkpoulsen",
   "license": "MIT",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkpoulsen/openscad-mcp.git"
+  },
+  "homepage": "https://github.com/dkpoulsen/openscad-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/dkpoulsen/openscad-mcp/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
     "zod": "^4.3.6"
